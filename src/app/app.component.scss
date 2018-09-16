@@ -1,0 +1,75 @@
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+
+ul {
+  li {
+    h2 {
+      a {
+        text-decoration: none;
+        color: grey;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 0 auto;
+
+      }
+    }
+  }
+}
+
+.input-imitate {
+  box-sizing: border-box;
+  padding: 18px;
+  &>.input-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #007399;
+  }
+  &>.custom-input-container {
+    width: 256px;
+    padding: 16px 0;
+     &>.custom-input-container__label-field {
+       padding-bottom: 4px;
+       height: 22px;
+       box-sizing: border-box;
+     }
+    &>.custom-input-container__text-field {
+        display: flex;
+        position: relative;
+        height: 38px;
+        &>.label-field {
+          position: absolute;
+          height: 8px;
+          font-family: Arial, Helvetica, sans-serif;
+          color: #007399;
+          //top: 9px;
+          //left: 37px;
+          //font-size: 18px;
+          //font-weight: 400;
+          //cursor: pointer;
+        }
+        &>.text-field {
+          width: calc(100% - 42px);
+          font-size: 18px;
+          padding: 4px 4px 4px 36px;
+          border-radius: 4px;
+          border: 1px solid grey;
+        }
+        &>.text-field__image {
+          position: absolute;
+          left: 10px;
+          height: 100%;
+          display: flex;
+          img {
+            width: 22px;
+            margin: auto;
+          }
+        }
+    }
+
+
+  }
+}
+
